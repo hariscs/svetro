@@ -1,76 +1,77 @@
 .header {
-	padding: 2rem 0;
-	margin-bottom: 2rem;
+  padding: 2rem 0;
+  margin-bottom: 2rem;
 }
 
 .header__flex {
-	display: flex;
-	flex-direction: column;
+  display: flex;
+  flex-direction: column;
 }
 
 .header__info {
-	display: flex;
-	flex-direction: column;
-	align-items: center;
-	text-align: center;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
 }
 
 .header__title {
-	font-size: 2rem;
-	padding-block: 3.313rem;
-	max-width: 20ch;
-	margin-inline: auto;
+  font-size: 2rem;
+  padding-block: 3.313rem;
+  max-width: 20ch;
+  margin-inline: auto;
 }
 
 .header__subtitle {
-	font-size: 1.25rem;
-	margin-bottom: 3.5rem;
-	color: var(--clr-dark-gray);
-	max-width: 35ch;
-	margin-inline: auto;
+  font-size: 1.25rem;
+  margin-bottom: 3.5rem;
+  color: var(--clr-dark-gray);
+  max-width: 35ch;
+  margin-inline: auto;
 }
 
 .header__img img {
-	border-radius: 16px;
-	margin-block: 3rem 5rem;
+  border-radius: 16px;
+  margin-block: 3rem 5rem;
 }
 
 @media (min-width: 80em) {
-	.header__flex {
-		flex-direction: row;
-		align-items: center;
-		justify-content: space-between;
-		gap: 1rem;
-	}
+  .header__flex {
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-between;
+    gap: 1rem;
+  }
 
-	.header__info,
-	.header__img {
-		flex: 1;
-	}
+  .header__info,
+  .header__img {
+    flex: 1;
+  }
 
-	.header__img {
-		margin: 0;
-		display: flex;
-		align-items: flex-end;
-		justify-content: flex-end;
-	}
+  .header__img {
+    margin: 0;
+    display: flex;
+    align-items: end;
+    justify-content: flex-end;
+    flex-direction: column;
+  }
 
-	.header__img img {
-		margin: 0;
-		max-width: 90%;
-	}
+  .header__img img {
+    margin: 0;
+    max-width: 90%;
+  }
 
-	.header__title {
-		font-size: 3rem;
-	}
+  .header__title {
+    font-size: 3rem;
+  }
 
-	.header__title,
-	.header__subtitle {
-		margin-left: 0;
-	}
+  .header__title,
+  .header__subtitle {
+    margin-left: 0;
+  }
 
-	.header__info {
-		align-items: flex-start;
-		text-align: start;
-	}
+  .header__info {
+    align-items: flex-start;
+    text-align: start;
+  }
 }
