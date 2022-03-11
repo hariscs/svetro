@@ -1,3 +1,4 @@
+
 import hamburger from "../assets/icon-hamburger.svg";
 import icon_close from "../assets/icon-close.svg";
 import logo from "../assets/onlyLogo.svg";
@@ -51,6 +52,10 @@ const images = {
   scale,
   meeting,
   blueCirlcePattern,
+	b1,
+	b2,
+	g1,
+	g2,
 };
 
 export default images;
