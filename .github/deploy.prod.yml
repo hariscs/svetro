@@ -16,6 +16,10 @@ jobs:
         run: |
           npm install
           npm run build
+      - name: Deploy To pages 🚀
+        uses: JamesIves/github-pages-deploy-action@v4
+        with:
+          folder: build 
       - name: Deploy to PROD 🚀
         env:
           remote_host: ${{ secrets.HOST }}
