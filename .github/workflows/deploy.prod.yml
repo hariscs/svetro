@@ -22,15 +22,15 @@ jobs:
         uses: JamesIves/github-pages-deploy-action@v4
         with:
           folder: build 
-      - name: Deploy to PROD 🚀
-        env:
-          remote_host: ${{ secrets.HOST }}
-          remote_user: ${{ secrets.USERNAME }}
-          remote_key: ${{ secrets.SSH_KEY }}
-          local_dir: 'build/'
-          remote_dir: '/home/svetro/'
-        run: |
-          mkdir ~/.ssh
-          echo "$remote_key" > ~/.ssh/gh_actions_key
-          chmod 600 ~/.ssh/gh_actions_key
-          rsync -avzr --delete -e "ssh -i ~/.ssh/gh_actions_key -o StrictHostKeyChecking=no" ${local_dir} ${remote_user}@${remote_host}:${remote_dir}
+ #     - name: Deploy to PROD 🚀
+ #       env:
+ #         remote_host: ${{ secrets.HOST }}
+ #         remote_user: ${{ secrets.USERNAME }}
+ #         remote_key: ${{ secrets.SSH_KEY }}
+ #         local_dir: 'build/'
+ #         remote_dir: '/home/svetro/'
+ #       run: |
+ #         mkdir ~/.ssh
+ #         echo "$remote_key" > ~/.ssh/gh_actions_key
+ #         chmod 600 ~/.ssh/gh_actions_key
+ #         rsync -avzr --delete -e "ssh -i ~/.ssh/gh_actions_key -o StrictHostKeyChecking=no" ${local_dir} ${remote_user}@${remote_host}:${remote_dir}
