@@ -90,7 +90,7 @@ const Form = () => {
 
 						<div className={styles.flex}>
 							<a href='mailto:info@svetro.com'>info@svetro.com</a>
-							<a href='callto:+447915601167'>+1 (210) 953 3347</a>
+							<a href='callto:+12109533347'>+1 (210) 953 3347</a>
 							
 							<div className={styles.address}>
 								2186 Jackson Keller Rd Ste 1215
