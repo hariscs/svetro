@@ -17,7 +17,7 @@ const Modal = ({ setModal }) => {
 					<div className={styles.modal__inputForm}>
 						<form
 							className={styles.inputForm}
-							action='https://formsubmit.co/contact-us@svetro.com'
+							action='https://formsubmit.co/info@svetro.com'
 							method='POST'
 						>
 							<input
